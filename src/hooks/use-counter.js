@@ -11,6 +11,9 @@ const useCounter = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  // you can return w/e you want in custom hooks: array, objects, num
+  return counter;
 };
 
 export default useCounter;
